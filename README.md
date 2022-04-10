@@ -25,3 +25,5 @@ Halo pada kesempatan kali ini saya akan membagikan project pengelola perpustakaa
 ![specificsiswa](https://user-images.githubusercontent.com/91861324/162628188-7524e1d4-2ea7-49f6-aeaa-a0b78fb9fe1e.png)
 
 ![peminjaman](https://user-images.githubusercontent.com/91861324/162628203-172cfb35-10f6-433f-994b-677b473efb13.png)
+
+Terimakasih sudah mau mampir :) , jangan lupa star nya ya
