@@ -4,5 +4,5 @@ Halo pada kesempatan kali ini saya akan membagikan project pengelola perpustakaa
     
   Teknologi yg dipakai 
             <li>Laravel 9 💾<li>
-            <p>Vue Js 💻</p>
-            <p>Tailwind CSS ✨</p>
+            <li>Vue Js 💻</li>
+            <li>Tailwind CSS ✨</li>
