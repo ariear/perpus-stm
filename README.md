@@ -1,6 +1,6 @@
 ## Perpus STM
 
-    Halo pada kesempatan kali ini saya akan membagikan project pengelola perpustakaan 📚 
+  -  Halo pada kesempatan kali ini saya akan membagikan project pengelola perpustakaan 📚 
     
   Teknologi yg dipakai 
             - Laravel 9 💾
