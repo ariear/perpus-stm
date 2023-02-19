@@ -75,20 +75,20 @@ export default {
   },
     methods: {
         async getKelas(){
-            await axios.get('http://perpustakaan.test/api/kelas', {headers: {'Authorization': 'Bearer '+this.$store.state.token}})
+            await axios.get('http://localhost:8000/api/kelas', {headers: {'Authorization': 'Bearer '+this.$store.state.token}})
                 .then(resposne => {
                     this.datakelas = resposne.data.data
                 })
         },
         async getSiswa(){
-                await axios.get(`http://perpustakaan.test/api/siswa/${this.form.kelas}` , {headers: {'Authorization': 'Bearer '+this.$store.state.token}})
+                await axios.get(`http://localhost:8000/api/siswa/${this.form.kelas}` , {headers: {'Authorization': 'Bearer '+this.$store.state.token}})
                     .then(response => {
                         this.dataSiswa = response.data.data
                     })
         },
         async tambahpeminjam(){
             try {
-                await axios.post('http://perpustakaan.test/api/peminjaman', this.form, {headers: {'Authorization': 'Bearer '+this.$store.state.token}})
+                await axios.post('http://localhost:8000/api/peminjaman', this.form, {headers: {'Authorization': 'Bearer '+this.$store.state.token}})
                     .then(response => {
                         this.alert = true
                         this.form = {
@@ -107,7 +107,7 @@ export default {
             }
         },
         async getBook(){
-            await axios.get('http://perpustakaan.test/api/books', {headers: {'Authorization': 'Bearer '+this.$store.state.token}})
+            await axios.get('http://localhost:8000/api/books', {headers: {'Authorization': 'Bearer '+this.$store.state.token}})
                 .then(response => {
                     this.dataBuku = response.data.data
                 })

@@ -122,7 +122,7 @@ export default {
     methods: {
         async tambahjenisbuku() {
             try {
-                await axios.post('http://perpustakaan.test/api/booktypes', this.form , {headers: {'Authorization': 'Bearer '+this.$store.state.token}})
+                await axios.post('http://localhost:8000/api/booktypes', this.form , {headers: {'Authorization': 'Bearer '+this.$store.state.token}})
                 .then(response => {
                     if (response.status == 200) {
                         this.alert = true
@@ -141,13 +141,13 @@ export default {
             }
         },
         async tampiljenis(){
-                    await axios.get('http://perpustakaan.test/api/booktypes', {headers: {'Authorization': 'Bearer '+this.$store.state.token}})
+                    await axios.get('http://localhost:8000/api/booktypes', {headers: {'Authorization': 'Bearer '+this.$store.state.token}})
                     .then(response => {
                         this.datajenisbuku = response.data.data
                     })
         },
         async hapusjenisbuku(booktype) {
-                await axios.delete(`http://perpustakaan.test/api/booktypes/${booktype}`, {headers: {'Authorization': 'Bearer '+this.$store.state.token}})
+                await axios.delete(`http://localhost:8000/api/booktypes/${booktype}`, {headers: {'Authorization': 'Bearer '+this.$store.state.token}})
                     .then(response => {
                         this.alerthapus = true
                         this.tampiljenis()
@@ -157,7 +157,7 @@ export default {
                 })
         },
         async editjenisbuku(id){
-            await axios.get(`http://perpustakaan.test/api/booktypes/${id}`, {headers: {'Authorization': 'Bearer '+this.$store.state.token}})
+            await axios.get(`http://localhost:8000/api/booktypes/${id}`, {headers: {'Authorization': 'Bearer '+this.$store.state.token}})
                 .then(response => {
                     this.formerror = []
                     this.bukaedit = true
@@ -166,7 +166,7 @@ export default {
         },
         async formeditjenisbuku(){
             try {
-                await axios.put(`http://perpustakaan.test/api/booktypes/${this.dataeditjenisbuku.id}`, this.dataeditjenisbuku , {headers: {'Authorization': 'Bearer '+this.$store.state.token}})
+                await axios.put(`http://localhost:8000/api/booktypes/${this.dataeditjenisbuku.id}`, this.dataeditjenisbuku , {headers: {'Authorization': 'Bearer '+this.$store.state.token}})
                 .then(response => {
                     this.alertedit = true
                     this.tampiljenis()

@@ -19721,7 +19721,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
               case 0:
                 _context.prev = 0;
                 _context.next = 3;
-                return axios__WEBPACK_IMPORTED_MODULE_1___default().post('http://perpustakaan.test/api/books', _this.form, {
+                return axios__WEBPACK_IMPORTED_MODULE_1___default().post('http://localhost:8000/api/books', _this.form, {
                   headers: {
                     'Authorization': 'Bearer ' + _this.$store.state.token
                   }
@@ -19770,7 +19770,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
             switch (_context2.prev = _context2.next) {
               case 0:
                 _context2.next = 2;
-                return axios__WEBPACK_IMPORTED_MODULE_1___default().get('http://perpustakaan.test/api/books', {
+                return axios__WEBPACK_IMPORTED_MODULE_1___default().get('http://localhost:8000/api/books', {
                   headers: {
                     'Authorization': 'Bearer ' + _this2.$store.state.token
                   }
@@ -19795,7 +19795,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
             switch (_context3.prev = _context3.next) {
               case 0:
                 _context3.next = 2;
-                return axios__WEBPACK_IMPORTED_MODULE_1___default()["delete"]("http://perpustakaan.test/api/books/".concat(id), {
+                return axios__WEBPACK_IMPORTED_MODULE_1___default()["delete"]("http://localhost:8000/api/books/".concat(id), {
                   headers: {
                     'Authorization': 'Bearer ' + _this3.$store.state.token
                   }
@@ -19826,7 +19826,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
             switch (_context4.prev = _context4.next) {
               case 0:
                 _context4.next = 2;
-                return axios__WEBPACK_IMPORTED_MODULE_1___default().get("http://perpustakaan.test/api/books/".concat(id), {
+                return axios__WEBPACK_IMPORTED_MODULE_1___default().get("http://localhost:8000/api/books/".concat(id), {
                   headers: {
                     'Authorization': 'Bearer ' + _this4.$store.state.token
                   }
@@ -19854,7 +19854,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
               case 0:
                 _context5.prev = 0;
                 _context5.next = 3;
-                return axios__WEBPACK_IMPORTED_MODULE_1___default().put("http://perpustakaan.test/api/books/".concat(_this5.dataeditbuku.id), _this5.dataeditbuku, {
+                return axios__WEBPACK_IMPORTED_MODULE_1___default().put("http://localhost:8000/api/books/".concat(_this5.dataeditbuku.id), _this5.dataeditbuku, {
                   headers: {
                     'Authorization': 'Bearer ' + _this5.$store.state.token
                   }
@@ -19905,7 +19905,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
             case 2:
               _this6.$store.state.munculmenu = false;
               _context6.next = 5;
-              return axios__WEBPACK_IMPORTED_MODULE_1___default().get('http://perpustakaan.test/api/booktypes', {
+              return axios__WEBPACK_IMPORTED_MODULE_1___default().get('http://localhost:8000/api/booktypes', {
                 headers: {
                   'Authorization': 'Bearer ' + _this6.$store.state.token
                 }
@@ -19978,7 +19978,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
               case 0:
                 _context.prev = 0;
                 _context.next = 3;
-                return axios__WEBPACK_IMPORTED_MODULE_1___default().post('http://perpustakaan.test/api/booktypes', _this.form, {
+                return axios__WEBPACK_IMPORTED_MODULE_1___default().post('http://localhost:8000/api/booktypes', _this.form, {
                   headers: {
                     'Authorization': 'Bearer ' + _this.$store.state.token
                   }
@@ -20024,7 +20024,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
             switch (_context2.prev = _context2.next) {
               case 0:
                 _context2.next = 2;
-                return axios__WEBPACK_IMPORTED_MODULE_1___default().get('http://perpustakaan.test/api/booktypes', {
+                return axios__WEBPACK_IMPORTED_MODULE_1___default().get('http://localhost:8000/api/booktypes', {
                   headers: {
                     'Authorization': 'Bearer ' + _this2.$store.state.token
                   }
@@ -20049,7 +20049,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
             switch (_context3.prev = _context3.next) {
               case 0:
                 _context3.next = 2;
-                return axios__WEBPACK_IMPORTED_MODULE_1___default()["delete"]("http://perpustakaan.test/api/booktypes/".concat(booktype), {
+                return axios__WEBPACK_IMPORTED_MODULE_1___default()["delete"]("http://localhost:8000/api/booktypes/".concat(booktype), {
                   headers: {
                     'Authorization': 'Bearer ' + _this3.$store.state.token
                   }
@@ -20080,7 +20080,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
             switch (_context4.prev = _context4.next) {
               case 0:
                 _context4.next = 2;
-                return axios__WEBPACK_IMPORTED_MODULE_1___default().get("http://perpustakaan.test/api/booktypes/".concat(id), {
+                return axios__WEBPACK_IMPORTED_MODULE_1___default().get("http://localhost:8000/api/booktypes/".concat(id), {
                   headers: {
                     'Authorization': 'Bearer ' + _this4.$store.state.token
                   }
@@ -20108,7 +20108,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
               case 0:
                 _context5.prev = 0;
                 _context5.next = 3;
-                return axios__WEBPACK_IMPORTED_MODULE_1___default().put("http://perpustakaan.test/api/booktypes/".concat(_this5.dataeditjenisbuku.id), _this5.dataeditjenisbuku, {
+                return axios__WEBPACK_IMPORTED_MODULE_1___default().put("http://localhost:8000/api/booktypes/".concat(_this5.dataeditjenisbuku.id), _this5.dataeditjenisbuku, {
                   headers: {
                     'Authorization': 'Bearer ' + _this5.$store.state.token
                   }
@@ -20218,7 +20218,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
             switch (_context.prev = _context.next) {
               case 0:
                 _context.next = 2;
-                return axios__WEBPACK_IMPORTED_MODULE_1___default().get("http://perpustakaan.test/api/siswa/".concat(_this.$route.params.id), {
+                return axios__WEBPACK_IMPORTED_MODULE_1___default().get("http://localhost:8000/api/siswa/".concat(_this.$route.params.id), {
                   headers: {
                     'Authorization': 'Bearer ' + _this.$store.state.token
                   }
@@ -20244,7 +20244,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
             switch (_context2.prev = _context2.next) {
               case 0:
                 _context2.next = 2;
-                return axios__WEBPACK_IMPORTED_MODULE_1___default().get('http://perpustakaan.test/api/kelas', {
+                return axios__WEBPACK_IMPORTED_MODULE_1___default().get('http://localhost:8000/api/kelas', {
                   headers: {
                     'Authorization': 'Bearer ' + _this2.$store.state.token
                   }
@@ -20269,7 +20269,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
             switch (_context3.prev = _context3.next) {
               case 0:
                 _context3.next = 2;
-                return axios__WEBPACK_IMPORTED_MODULE_1___default()["delete"]("http://perpustakaan.test/api/siswa/".concat(id), {
+                return axios__WEBPACK_IMPORTED_MODULE_1___default()["delete"]("http://localhost:8000/api/siswa/".concat(id), {
                   headers: {
                     'Authorization': 'Bearer ' + _this3.$store.state.token
                   }
@@ -20300,7 +20300,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
             switch (_context4.prev = _context4.next) {
               case 0:
                 _context4.next = 2;
-                return axios__WEBPACK_IMPORTED_MODULE_1___default().get("http://perpustakaan.test/api/siswa/".concat(id, "/edit"), {
+                return axios__WEBPACK_IMPORTED_MODULE_1___default().get("http://localhost:8000/api/siswa/".concat(id, "/edit"), {
                   headers: {
                     'Authorization': 'Bearer ' + _this4.$store.state.token
                   }
@@ -20326,7 +20326,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
               case 0:
                 _context5.prev = 0;
                 _context5.next = 3;
-                return axios__WEBPACK_IMPORTED_MODULE_1___default().put("http://perpustakaan.test/api/siswa/".concat(_this5.form.id), _this5.form, {
+                return axios__WEBPACK_IMPORTED_MODULE_1___default().put("http://localhost:8000/api/siswa/".concat(_this5.form.id), _this5.form, {
                   headers: {
                     'Authorization': 'Bearer ' + _this5.$store.state.token
                   }
@@ -20414,7 +20414,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
           switch (_context.prev = _context.next) {
             case 0:
               _context.next = 2;
-              return axios__WEBPACK_IMPORTED_MODULE_1___default().get('http://perpustakaan.test/api/user', {
+              return axios__WEBPACK_IMPORTED_MODULE_1___default().get('http://localhost:8000/api/user', {
                 headers: {
                   'Authorization': 'Bearer ' + _this.$store.state.token
                 }
@@ -20440,7 +20440,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
             switch (_context2.prev = _context2.next) {
               case 0:
                 _context2.next = 2;
-                return axios__WEBPACK_IMPORTED_MODULE_1___default().get('http://perpustakaan.test/api/peminjaman', {
+                return axios__WEBPACK_IMPORTED_MODULE_1___default().get('http://localhost:8000/api/peminjaman', {
                   headers: {
                     'Authorization': 'Bearer ' + _this2.$store.state.token
                   }
@@ -20465,7 +20465,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
             switch (_context3.prev = _context3.next) {
               case 0:
                 _context3.next = 2;
-                return axios__WEBPACK_IMPORTED_MODULE_1___default().put('http://perpustakaan.test/api/peminjaman', _this3.telat, {
+                return axios__WEBPACK_IMPORTED_MODULE_1___default().put('http://localhost:8000/api/peminjaman', _this3.telat, {
                   headers: {
                     'Authorization': 'Bearer ' + _this3.$store.state.token
                   }
@@ -20488,7 +20488,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
             switch (_context4.prev = _context4.next) {
               case 0:
                 _context4.next = 2;
-                return axios__WEBPACK_IMPORTED_MODULE_1___default()["delete"]("http://perpustakaan.test/api/peminjaman/".concat(id), {
+                return axios__WEBPACK_IMPORTED_MODULE_1___default()["delete"]("http://localhost:8000/api/peminjaman/".concat(id), {
                   headers: {
                     'Authorization': 'Bearer ' + _this4.$store.state.token
                   }
@@ -20526,7 +20526,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
             switch (_context5.prev = _context5.next) {
               case 0:
                 _context5.next = 2;
-                return axios__WEBPACK_IMPORTED_MODULE_1___default().get('http://perpustakaan.test/api/count', {
+                return axios__WEBPACK_IMPORTED_MODULE_1___default().get('http://localhost:8000/api/count', {
                   headers: {
                     'Authorization': 'Bearer ' + _this5.$store.state.token
                   }
@@ -20607,7 +20607,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
             switch (_context.prev = _context.next) {
               case 0:
                 _context.next = 2;
-                return axios__WEBPACK_IMPORTED_MODULE_1___default().get('http://perpustakaan.test/api/kelas', {
+                return axios__WEBPACK_IMPORTED_MODULE_1___default().get('http://localhost:8000/api/kelas', {
                   headers: {
                     'Authorization': 'Bearer ' + _this.$store.state.token
                   }
@@ -20633,7 +20633,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
               case 0:
                 _context2.prev = 0;
                 _context2.next = 3;
-                return axios__WEBPACK_IMPORTED_MODULE_1___default().post('http://perpustakaan.test/api/siswa', _this2.form, {
+                return axios__WEBPACK_IMPORTED_MODULE_1___default().post('http://localhost:8000/api/siswa', _this2.form, {
                   headers: {
                     'Authorization': 'Bearer ' + _this2.$store.state.token
                   }
@@ -20724,7 +20724,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
             switch (_context.prev = _context.next) {
               case 0:
                 _context.next = 2;
-                return axios__WEBPACK_IMPORTED_MODULE_1___default().get('http://perpustakaan.test/api/kelas', {
+                return axios__WEBPACK_IMPORTED_MODULE_1___default().get('http://localhost:8000/api/kelas', {
                   headers: {
                     'Authorization': 'Bearer ' + _this.$store.state.token
                   }
@@ -20749,7 +20749,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
             switch (_context2.prev = _context2.next) {
               case 0:
                 _context2.next = 2;
-                return axios__WEBPACK_IMPORTED_MODULE_1___default().get("http://perpustakaan.test/api/siswa/".concat(_this2.form.kelas), {
+                return axios__WEBPACK_IMPORTED_MODULE_1___default().get("http://localhost:8000/api/siswa/".concat(_this2.form.kelas), {
                   headers: {
                     'Authorization': 'Bearer ' + _this2.$store.state.token
                   }
@@ -20775,7 +20775,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
               case 0:
                 _context3.prev = 0;
                 _context3.next = 3;
-                return axios__WEBPACK_IMPORTED_MODULE_1___default().post('http://perpustakaan.test/api/peminjaman', _this3.form, {
+                return axios__WEBPACK_IMPORTED_MODULE_1___default().post('http://localhost:8000/api/peminjaman', _this3.form, {
                   headers: {
                     'Authorization': 'Bearer ' + _this3.$store.state.token
                   }
@@ -20819,7 +20819,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
             switch (_context4.prev = _context4.next) {
               case 0:
                 _context4.next = 2;
-                return axios__WEBPACK_IMPORTED_MODULE_1___default().get('http://perpustakaan.test/api/books', {
+                return axios__WEBPACK_IMPORTED_MODULE_1___default().get('http://localhost:8000/api/books', {
                   headers: {
                     'Authorization': 'Bearer ' + _this4.$store.state.token
                   }
@@ -23122,8 +23122,8 @@ var store = (0,vuex__WEBPACK_IMPORTED_MODULE_4__.createStore)({
   mutations: {
     login: function login(state, form) {
       if (form.email && form.password) {
-        axios__WEBPACK_IMPORTED_MODULE_3___default().get('http://perpustakaan.test/sanctum/csrf-cookie').then(function (response) {
-          axios__WEBPACK_IMPORTED_MODULE_3___default().post('http://perpustakaan.test/api/login', {
+        axios__WEBPACK_IMPORTED_MODULE_3___default().get('http://localhost:8000/sanctum/csrf-cookie').then(function (response) {
+          axios__WEBPACK_IMPORTED_MODULE_3___default().post('http://localhost:8000/api/login', {
             email: form.email,
             password: form.password
           }).then(function (res) {
@@ -42036,13 +42036,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _App_vue_vue_type_template_id_f348271a__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./App.vue?vue&type=template&id=f348271a */ "./resources/js/App.vue?vue&type=template&id=f348271a");
 /* harmony import */ var _App_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./App.vue?vue&type=script&lang=js */ "./resources/js/App.vue?vue&type=script&lang=js");
-/* harmony import */ var C_laragon_www_perpustakaan_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var D_Coding_Web_Dinamic_perpustakaan_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,C_laragon_www_perpustakaan_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_App_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_App_vue_vue_type_template_id_f348271a__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/App.vue"]])
+const __exports__ = /*#__PURE__*/(0,D_Coding_Web_Dinamic_perpustakaan_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_App_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_App_vue_vue_type_template_id_f348271a__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/App.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -42065,7 +42065,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Sidebar_vue_vue_type_template_id_25208ec8__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Sidebar.vue?vue&type=template&id=25208ec8 */ "./resources/js/component/Sidebar.vue?vue&type=template&id=25208ec8");
 /* harmony import */ var _Sidebar_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Sidebar.vue?vue&type=script&lang=js */ "./resources/js/component/Sidebar.vue?vue&type=script&lang=js");
 /* harmony import */ var _Sidebar_vue_vue_type_style_index_0_id_25208ec8_lang_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Sidebar.vue?vue&type=style&index=0&id=25208ec8&lang=css */ "./resources/js/component/Sidebar.vue?vue&type=style&index=0&id=25208ec8&lang=css");
-/* harmony import */ var C_laragon_www_perpustakaan_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var D_Coding_Web_Dinamic_perpustakaan_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
@@ -42073,7 +42073,7 @@ __webpack_require__.r(__webpack_exports__);
 ;
 
 
-const __exports__ = /*#__PURE__*/(0,C_laragon_www_perpustakaan_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_Sidebar_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Sidebar_vue_vue_type_template_id_25208ec8__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/component/Sidebar.vue"]])
+const __exports__ = /*#__PURE__*/(0,D_Coding_Web_Dinamic_perpustakaan_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_Sidebar_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Sidebar_vue_vue_type_template_id_25208ec8__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/component/Sidebar.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -42096,7 +42096,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Book_vue_vue_type_template_id_62907e08__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Book.vue?vue&type=template&id=62907e08 */ "./resources/js/views/Book.vue?vue&type=template&id=62907e08");
 /* harmony import */ var _Book_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Book.vue?vue&type=script&lang=js */ "./resources/js/views/Book.vue?vue&type=script&lang=js");
 /* harmony import */ var _Book_vue_vue_type_style_index_0_id_62907e08_lang_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Book.vue?vue&type=style&index=0&id=62907e08&lang=css */ "./resources/js/views/Book.vue?vue&type=style&index=0&id=62907e08&lang=css");
-/* harmony import */ var C_laragon_www_perpustakaan_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var D_Coding_Web_Dinamic_perpustakaan_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
@@ -42104,7 +42104,7 @@ __webpack_require__.r(__webpack_exports__);
 ;
 
 
-const __exports__ = /*#__PURE__*/(0,C_laragon_www_perpustakaan_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_Book_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Book_vue_vue_type_template_id_62907e08__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/views/Book.vue"]])
+const __exports__ = /*#__PURE__*/(0,D_Coding_Web_Dinamic_perpustakaan_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_Book_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Book_vue_vue_type_template_id_62907e08__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/views/Book.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -42127,7 +42127,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _BookType_vue_vue_type_template_id_e77fe73c__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./BookType.vue?vue&type=template&id=e77fe73c */ "./resources/js/views/BookType.vue?vue&type=template&id=e77fe73c");
 /* harmony import */ var _BookType_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./BookType.vue?vue&type=script&lang=js */ "./resources/js/views/BookType.vue?vue&type=script&lang=js");
 /* harmony import */ var _BookType_vue_vue_type_style_index_0_id_e77fe73c_lang_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./BookType.vue?vue&type=style&index=0&id=e77fe73c&lang=css */ "./resources/js/views/BookType.vue?vue&type=style&index=0&id=e77fe73c&lang=css");
-/* harmony import */ var C_laragon_www_perpustakaan_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var D_Coding_Web_Dinamic_perpustakaan_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
@@ -42135,7 +42135,7 @@ __webpack_require__.r(__webpack_exports__);
 ;
 
 
-const __exports__ = /*#__PURE__*/(0,C_laragon_www_perpustakaan_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_BookType_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_BookType_vue_vue_type_template_id_e77fe73c__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/views/BookType.vue"]])
+const __exports__ = /*#__PURE__*/(0,D_Coding_Web_Dinamic_perpustakaan_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_BookType_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_BookType_vue_vue_type_template_id_e77fe73c__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/views/BookType.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -42157,13 +42157,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _DataSiswa_vue_vue_type_template_id_786a3e4e__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./DataSiswa.vue?vue&type=template&id=786a3e4e */ "./resources/js/views/DataSiswa.vue?vue&type=template&id=786a3e4e");
 /* harmony import */ var _DataSiswa_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./DataSiswa.vue?vue&type=script&lang=js */ "./resources/js/views/DataSiswa.vue?vue&type=script&lang=js");
-/* harmony import */ var C_laragon_www_perpustakaan_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var D_Coding_Web_Dinamic_perpustakaan_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,C_laragon_www_perpustakaan_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_DataSiswa_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_DataSiswa_vue_vue_type_template_id_786a3e4e__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/views/DataSiswa.vue"]])
+const __exports__ = /*#__PURE__*/(0,D_Coding_Web_Dinamic_perpustakaan_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_DataSiswa_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_DataSiswa_vue_vue_type_template_id_786a3e4e__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/views/DataSiswa.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -42185,13 +42185,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _Home_vue_vue_type_template_id_63cd6604__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Home.vue?vue&type=template&id=63cd6604 */ "./resources/js/views/Home.vue?vue&type=template&id=63cd6604");
 /* harmony import */ var _Home_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Home.vue?vue&type=script&lang=js */ "./resources/js/views/Home.vue?vue&type=script&lang=js");
-/* harmony import */ var C_laragon_www_perpustakaan_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var D_Coding_Web_Dinamic_perpustakaan_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,C_laragon_www_perpustakaan_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_Home_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Home_vue_vue_type_template_id_63cd6604__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/views/Home.vue"]])
+const __exports__ = /*#__PURE__*/(0,D_Coding_Web_Dinamic_perpustakaan_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_Home_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Home_vue_vue_type_template_id_63cd6604__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/views/Home.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -42214,7 +42214,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Kelas_vue_vue_type_template_id_6b03e275__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Kelas.vue?vue&type=template&id=6b03e275 */ "./resources/js/views/Kelas.vue?vue&type=template&id=6b03e275");
 /* harmony import */ var _Kelas_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Kelas.vue?vue&type=script&lang=js */ "./resources/js/views/Kelas.vue?vue&type=script&lang=js");
 /* harmony import */ var _Kelas_vue_vue_type_style_index_0_id_6b03e275_lang_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Kelas.vue?vue&type=style&index=0&id=6b03e275&lang=css */ "./resources/js/views/Kelas.vue?vue&type=style&index=0&id=6b03e275&lang=css");
-/* harmony import */ var C_laragon_www_perpustakaan_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var D_Coding_Web_Dinamic_perpustakaan_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
@@ -42222,7 +42222,7 @@ __webpack_require__.r(__webpack_exports__);
 ;
 
 
-const __exports__ = /*#__PURE__*/(0,C_laragon_www_perpustakaan_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_Kelas_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Kelas_vue_vue_type_template_id_6b03e275__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/views/Kelas.vue"]])
+const __exports__ = /*#__PURE__*/(0,D_Coding_Web_Dinamic_perpustakaan_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_Kelas_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Kelas_vue_vue_type_template_id_6b03e275__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/views/Kelas.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -42244,13 +42244,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _Peminjaman_vue_vue_type_template_id_532e3a05__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Peminjaman.vue?vue&type=template&id=532e3a05 */ "./resources/js/views/Peminjaman.vue?vue&type=template&id=532e3a05");
 /* harmony import */ var _Peminjaman_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Peminjaman.vue?vue&type=script&lang=js */ "./resources/js/views/Peminjaman.vue?vue&type=script&lang=js");
-/* harmony import */ var C_laragon_www_perpustakaan_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var D_Coding_Web_Dinamic_perpustakaan_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,C_laragon_www_perpustakaan_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_Peminjaman_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Peminjaman_vue_vue_type_template_id_532e3a05__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/views/Peminjaman.vue"]])
+const __exports__ = /*#__PURE__*/(0,D_Coding_Web_Dinamic_perpustakaan_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_Peminjaman_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Peminjaman_vue_vue_type_template_id_532e3a05__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/views/Peminjaman.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -42272,13 +42272,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _Login_vue_vue_type_template_id_46ec553e__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Login.vue?vue&type=template&id=46ec553e */ "./resources/js/views/auth/Login.vue?vue&type=template&id=46ec553e");
 /* harmony import */ var _Login_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Login.vue?vue&type=script&lang=js */ "./resources/js/views/auth/Login.vue?vue&type=script&lang=js");
-/* harmony import */ var C_laragon_www_perpustakaan_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var D_Coding_Web_Dinamic_perpustakaan_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,C_laragon_www_perpustakaan_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_Login_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Login_vue_vue_type_template_id_46ec553e__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/views/auth/Login.vue"]])
+const __exports__ = /*#__PURE__*/(0,D_Coding_Web_Dinamic_perpustakaan_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_Login_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Login_vue_vue_type_template_id_46ec553e__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/views/auth/Login.vue"]])
 /* hot reload */
 if (false) {}
 

@@ -67,14 +67,14 @@ export default {
     },
     methods: {
         async getkelas(){
-            await axios.get('http://perpustakaan.test/api/kelas',{headers: {'Authorization': 'Bearer '+this.$store.state.token}})
+            await axios.get('http://localhost:8000/api/kelas',{headers: {'Authorization': 'Bearer '+this.$store.state.token}})
             .then(response => {
                 this.kelas = response.data.data
             })
         },
         async tambahsiswa(){
             try {
-                await axios.post('http://perpustakaan.test/api/siswa', this.form , {headers: {'Authorization': 'Bearer '+this.$store.state.token}})
+                await axios.post('http://localhost:8000/api/siswa', this.form , {headers: {'Authorization': 'Bearer '+this.$store.state.token}})
                 .then(response => {
                     this.alert = true
                     this.bukatambah = false

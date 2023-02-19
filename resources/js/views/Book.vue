@@ -155,7 +155,7 @@ export default {
     methods: {
         async tambahbuku() {
             try {
-                await axios.post('http://perpustakaan.test/api/books', this.form , {headers: {'Authorization': 'Bearer '+this.$store.state.token}})
+                await axios.post('http://localhost:8000/api/books', this.form , {headers: {'Authorization': 'Bearer '+this.$store.state.token}})
                 .then(response => {
                     if (response.status == 200) {
                         this.alert = true
@@ -177,13 +177,13 @@ export default {
             }
         },
         async tampilbook(){
-                    await axios.get('http://perpustakaan.test/api/books', {headers: {'Authorization': 'Bearer '+this.$store.state.token}})
+                    await axios.get('http://localhost:8000/api/books', {headers: {'Authorization': 'Bearer '+this.$store.state.token}})
                     .then(response => {
                         this.databuku = response.data.data
                     })
         },
         async hapusbuku(id){
-                await axios.delete(`http://perpustakaan.test/api/books/${id}`, {headers: {'Authorization': 'Bearer '+this.$store.state.token}})
+                await axios.delete(`http://localhost:8000/api/books/${id}`, {headers: {'Authorization': 'Bearer '+this.$store.state.token}})
                     .then(response => {
                         this.alerthapus = true
                         this.tampilbook()
@@ -193,7 +193,7 @@ export default {
                     })
         },
         async bukaeditbuku(id){
-            await axios.get(`http://perpustakaan.test/api/books/${id}`, {headers: {'Authorization': 'Bearer '+this.$store.state.token}})
+            await axios.get(`http://localhost:8000/api/books/${id}`, {headers: {'Authorization': 'Bearer '+this.$store.state.token}})
                 .then(response => {
                     this.formerror = []
                     this.bukaedit = true
@@ -202,7 +202,7 @@ export default {
         },
         async editbuku(){
             try {
-                await axios.put(`http://perpustakaan.test/api/books/${this.dataeditbuku.id}`, this.dataeditbuku , {headers: {'Authorization': 'Bearer '+this.$store.state.token}})
+                await axios.put(`http://localhost:8000/api/books/${this.dataeditbuku.id}`, this.dataeditbuku , {headers: {'Authorization': 'Bearer '+this.$store.state.token}})
                     .then(response => {
                         this.alertedit = true
                         this.tampilbook()
@@ -221,7 +221,7 @@ export default {
             return this.$router.push('/login')
         }
         this.$store.state.munculmenu = false
-        await axios.get('http://perpustakaan.test/api/booktypes', {headers: {'Authorization': 'Bearer '+this.$store.state.token}})
+        await axios.get('http://localhost:8000/api/booktypes', {headers: {'Authorization': 'Bearer '+this.$store.state.token}})
         .then(response => {
             this.types = response.data.data
         })

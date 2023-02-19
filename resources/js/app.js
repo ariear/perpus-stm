@@ -17,9 +17,9 @@ const store = createStore({
     mutations:{
         login(state , form){
             if (form.email && form.password) {
-                axios.get('http://perpustakaan.test/sanctum/csrf-cookie')
+                axios.get('http://localhost:8000/sanctum/csrf-cookie')
                 .then(response => {
-                    axios.post('http://perpustakaan.test/api/login', {
+                    axios.post('http://localhost:8000/api/login', {
                         email: form.email,
                         password: form.password
                     }).then(res => {

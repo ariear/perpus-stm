@@ -106,20 +106,20 @@ export default {
     },
     methods: {
         async getSiswaByKelas(){
-            await axios.get(`http://perpustakaan.test/api/siswa/${this.$route.params.id}`, {headers: {'Authorization': 'Bearer '+this.$store.state.token}})
+            await axios.get(`http://localhost:8000/api/siswa/${this.$route.params.id}`, {headers: {'Authorization': 'Bearer '+this.$store.state.token}})
                 .then(response => {
                     this.datasiswa = response.data.data
                     this.kelas = response.data.kelas.kelas
                 })
         },
         async getkelas(){
-            await axios.get('http://perpustakaan.test/api/kelas',{headers: {'Authorization': 'Bearer '+this.$store.state.token}})
+            await axios.get('http://localhost:8000/api/kelas',{headers: {'Authorization': 'Bearer '+this.$store.state.token}})
             .then(response => {
                 this.listkelas = response.data.data
             })
         },
         async hapusSiswa(id){
-            await axios.delete(`http://perpustakaan.test/api/siswa/${id}`, {headers: {'Authorization': 'Bearer '+this.$store.state.token}})
+            await axios.delete(`http://localhost:8000/api/siswa/${id}`, {headers: {'Authorization': 'Bearer '+this.$store.state.token}})
                 .then(response => {
                     this.alerthapus = true
                     this.getSiswaByKelas()
@@ -129,7 +129,7 @@ export default {
                 })
         },
         async bukaeditform(id){
-            await axios.get(`http://perpustakaan.test/api/siswa/${id}/edit` , {headers: {'Authorization': 'Bearer '+this.$store.state.token}})
+            await axios.get(`http://localhost:8000/api/siswa/${id}/edit` , {headers: {'Authorization': 'Bearer '+this.$store.state.token}})
                 .then(response => {
                     this.bukaedit = true,
                     this.form = response.data.data
@@ -137,7 +137,7 @@ export default {
         },
         async editsiswa(){
             try {
-                await axios.put(`http://perpustakaan.test/api/siswa/${this.form.id}`, this.form ,{headers: {'Authorization': 'Bearer '+this.$store.state.token}} )
+                await axios.put(`http://localhost:8000/api/siswa/${this.form.id}`, this.form ,{headers: {'Authorization': 'Bearer '+this.$store.state.token}} )
                     .then(response => {
                         this.alertedit = true
                         this.bukaedit = false

@@ -85,23 +85,23 @@ export default {
         }
     },
     async created() {
-        await axios.get('http://perpustakaan.test/api/user',  {headers: {'Authorization': 'Bearer '+this.$store.state.token}})
+        await axios.get('http://localhost:8000/api/user',  {headers: {'Authorization': 'Bearer '+this.$store.state.token}})
         .then(response => {
             this.nama = response.data.nama
         })
     },
     methods: {
         async getPeminjaman(){
-            await axios.get('http://perpustakaan.test/api/peminjaman', {headers: {'Authorization': 'Bearer '+this.$store.state.token}})
+            await axios.get('http://localhost:8000/api/peminjaman', {headers: {'Authorization': 'Bearer '+this.$store.state.token}})
                 .then(response => {
                     this.dataPeminjam = response.data.data
                 })
         },
         async pastelat(){
-            await axios.put('http://perpustakaan.test/api/peminjaman', this.telat  , {headers: {'Authorization': 'Bearer '+this.$store.state.token}})
+            await axios.put('http://localhost:8000/api/peminjaman', this.telat  , {headers: {'Authorization': 'Bearer '+this.$store.state.token}})
         },
         async kembalikan(id){
-            await axios.delete(`http://perpustakaan.test/api/peminjaman/${id}`,  {headers: {'Authorization': 'Bearer '+this.$store.state.token}})
+            await axios.delete(`http://localhost:8000/api/peminjaman/${id}`,  {headers: {'Authorization': 'Bearer '+this.$store.state.token}})
                 .then(response => {
                     this.alert = true
                     this.getPeminjaman()
@@ -118,7 +118,7 @@ export default {
             return location.href = '/login'
         },
         async getCountData(){
-            await axios.get('http://perpustakaan.test/api/count', {headers: {'Authorization': 'Bearer '+this.$store.state.token}})
+            await axios.get('http://localhost:8000/api/count', {headers: {'Authorization': 'Bearer '+this.$store.state.token}})
                 .then(response => {
                     this.countbuku = response.data.buku.length
                     this.jenisbuku = response.data.jenisbuku.length
